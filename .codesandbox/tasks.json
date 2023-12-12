@@ -19,15 +19,17 @@
     },
     "build": {
       "name": "Build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     },
     "install": {
       "name": "Install Dependencies",
       "command": "npm install",
       "restartOn": {
-        "files": ["package-lock.json"],
-        "branch": false
+        "files": [
+          "package-lock.json"
+        ],
+        "branch": false,
+        "resume": false
       }
     }
   }
